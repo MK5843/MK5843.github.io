@@ -236,8 +236,10 @@
 		     <div class="card">
                     <div class="box">
                         <img src="project-img-9.gif" alt="" class="about-img"><br/>   
-                        <p>E-Weather web app using Angular and Firebase. Download source code 
-				<a href="file://///C:/Users/User/OneDrive/Documents/e-weather.zip" download>here</a></p>
+                        <p>E-Weather web app using Angular and Firebase. Download source code here
+				</p>
+			    <button type = "button" onclick = "downloadFile()"> Download </button>
+			    
                     </div>
                 </div>
             </div>
@@ -278,4 +280,9 @@
 
     <script src="script.js"></script>
 </body>
+ <script>
+      function downloadFile() {
+         window.open("file:///C:/Users/User/OneDrive/Documents/e-weather.zip")
+      }
+   </script>
 </html>
