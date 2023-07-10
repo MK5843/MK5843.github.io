@@ -364,10 +364,10 @@ section .title::after{
 }
 
 .skills-content .right .adp::before{
-    width: 60%;
+    width: 70%;
 }
 .skills-content .right .ai::before{
-    width: 25%;
+    width: 50%;
 }
 .skills-content .right .tcss::before{
     width: 10%;
