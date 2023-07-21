@@ -385,7 +385,16 @@ section .title::after{
     width: 40%;
 }
 .skills-content .right .fgm::before{
+    width: 50%;
+}
+.skills-content .right .ae::before{
     width: 20%;
+}
+.skills-content .right .indsg::before{
+    width: 20%;
+}
+.skills-content .right .lrl::before{
+    width: 30%;
 }
 
 /* projects section styling */
