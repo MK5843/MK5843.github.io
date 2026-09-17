@@ -137,6 +137,9 @@ button {
             #152536
         );
 
+    background-image: url('../images/mk-profile-pic.png');
+    background-size: cover;
+
     color: white;
 
     font-size: 25px;
@@ -720,6 +723,8 @@ button {
     color: #ffd343;
 
     border: 1px solid #29445b;
+
+    background-image: image-url("assets/images/python-icon.png");
 }
 
 
@@ -732,6 +737,14 @@ button {
     border: 1px solid #514720;
 }
 
+.app-icon {
+
+    background: #172a3a;
+
+    color: #f2c811;
+
+    border: 1px solid #29445b;
+}
 
 .future-icon {
 
@@ -819,6 +832,54 @@ button {
 
 
 .github-symbol {
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    color: #c4d1dd;
+}
+
+.live-link {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    color: var(--accent);
+
+    font-size: 13px;
+
+    font-weight: 500;
+}
+
+.project-link {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    color: var(--accent);
+
+    font-size: 13px;
+
+    font-weight: 500;
+}
+
+.live-link:hover {
+
+    color: var(--accent-hover);
+}
+
+.project-link:hover {
+
+    color: var(--accent-hover);
+}
+.live-symbol {
 
     font-size: 10px;
 
@@ -946,15 +1007,13 @@ button {
 
 .no-projects {
 
-    display: none;
-
     padding: 50px 0;
 
     color: var(--muted);
 
     font-size: 14px;
 
-    text-align: center;
+    text-align: left;
 }
 
 /* =========================================
@@ -1394,6 +1453,10 @@ button {
         border-radius: 50%;
 
         background: #1b2d3f;
+
+        background-image: url('../images/mk-profile-pic.png');
+         
+        background-size: cover;
 
         color: white;
 
