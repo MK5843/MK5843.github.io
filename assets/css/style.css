@@ -937,6 +937,209 @@ button {
 
 
 /* =========================================
+   CERT GRID
+========================================= */
+
+.cert-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(1, minmax(1, 1fr));
+
+    gap: 24px;
+}
+
+
+.cert-card {
+
+    padding: 27px 28px 25px 25px;
+
+    background: var(--card);
+
+    border: 1px solid var(--border);
+
+    border-radius: 7px;
+
+    transition:
+        border-color 0.2s ease,
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.cert-card:hover {
+
+    background: var(--card-hover);
+
+    border-color: #344554;
+
+    transform: translateY(-2px);
+}
+
+
+.cert-icon {
+
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 18px;
+
+    border-radius: 8px;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: -0.03em;
+}
+
+.app-icon {
+
+    background: #172a3a;
+
+    color: #f2c811;
+
+    border: 1px solid #29445b;
+}
+
+.future-icon {
+
+    background: #18232d;
+
+    color: #8ca3b8;
+
+    font-size: 22px;
+}
+
+
+.cert-card h3,
+.cert-page-card h2 {
+
+    color: var(--heading);
+
+    font-size: 17px;
+
+    line-height: 1.3;
+
+    margin-bottom: 10px;
+}
+
+
+.cert-card p {
+
+    color: var(--text);
+
+    font-size: 14px;
+
+    line-height: 1.65;
+
+    margin-bottom: 15px;
+}
+
+
+.cert-tags {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 7px;
+
+    margin-bottom: 19px;
+}
+
+
+.cert-tags span {
+
+    padding: 4px 10px;
+
+    border-radius: 50px;
+
+    background: #17222d;
+
+    border: 1px solid #263542;
+
+    color: #9db2c5;
+
+    font-size: 11px;
+}
+
+.cert-link {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    color: var(--accent);
+
+    font-size: 13px;
+
+    font-weight: 500;
+}
+
+.cert-link:hover {
+
+    color: var(--accent-hover);
+}
+
+
+/* =========================================
+   CERT YEAR
+========================================= */
+
+.cert-year-group {
+
+    margin-bottom: 45px;
+}
+
+
+.cert-year-heading {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    margin-bottom: 16px;
+
+    color: var(--heading);
+
+    font-size: 17px;
+
+    font-weight: 600;
+}
+
+
+.cert-year-heading::after {
+
+    content: "";
+
+    flex: 1;
+
+    height: 1px;
+
+    background: var(--border);
+}
+
+
+.cert-year-heading span {
+
+    white-space: nowrap;
+
+    color: #aebdcb;
+}
+
+
+/* =========================================
    YEAR FILTER
 ========================================= */
 
@@ -955,6 +1158,21 @@ button {
     border-bottom: 1px solid var(--border);
 }
 
+
+.cert-filters {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-bottom: 42px;
+
+    padding-bottom: 18px;
+
+    border-bottom: 1px solid var(--border);
+}
 
 .year-filter {
 
@@ -1199,6 +1417,60 @@ button {
 
 
 /* =========================================
+   CERT PAGE
+========================================= */
+
+.cert-page-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(1, minmax(1, 1fr));
+
+    gap: 24px;
+    padding-bottom: 45px;
+}
+
+
+.cert-page-card {
+
+    min-height: 340px;
+}
+
+
+.cert-page-card .cert-category {
+
+    color: var(--accent);
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.1em;
+
+    margin-bottom: 12px;
+}
+
+
+.cert-page-card h2 {
+
+    font-size: 22px;
+
+    margin-bottom: 15px;
+}
+
+
+.cert-page-card > p:not(.cert-category) {
+
+    color: var(--text);
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
    ABOUT PAGE
 ========================================= */
 
@@ -1270,6 +1542,7 @@ button {
 }
 
 
+
 /* =========================================
    MAIN FOOTER
 ========================================= */
@@ -1329,6 +1602,18 @@ button {
         gap: 16px;
     }
 
+    .cert-grid {
+
+        gap: 16px;
+    }
+
+    .cert-image {
+       
+        width: 100%;
+        height: auto;
+    
+    }
+
 }
 
 
@@ -1377,6 +1662,11 @@ button {
         grid-template-columns: 1fr;
     }
 
+    .cert-grid {
+
+        grid-template-columns: 1fr;
+    }
+
 
     .about-page {
 
@@ -1395,6 +1685,13 @@ button {
         border-left: none;
 
         border-top: 1px solid var(--border);
+    }
+
+    .cert-image {
+
+        width: 100%;
+        height: auto;
+    
     }
 
 }
@@ -1669,6 +1966,17 @@ button {
         padding: 23px;
     }
 
+    
+    .cert-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .cert-card {
+
+        padding: 23px;
+    }
+
 
     .skills-list {
 
@@ -1707,6 +2015,18 @@ button {
         min-height: auto;
     }
 
+    
+    .cert-page-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .cert-page-card {
+
+        min-height: auto;
+    }
+
 
     .about-page {
 
@@ -1721,6 +2041,13 @@ button {
         padding-left: 0;
 
         padding-top: 30px;
+    }
+
+    .cert-image {
+
+        width: 100%;
+        height: auto;
+
     }
 
 }
@@ -1768,6 +2095,25 @@ button {
     .project-card h3 {
 
         font-size: 16px;
+    }
+
+    
+    .cert-card {
+
+        padding: 20px;
+    }
+
+
+    .cert-card h3 {
+
+        font-size: 16px;
+    }
+
+    .cert-image {
+
+        width: 100%;
+        height: auto;
+
     }
 
 }
